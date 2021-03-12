@@ -1,0 +1,552 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Boostrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <!-- CSS ku -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootsrtap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+
+    <!-- SLick CSS -->
+    <link rel="stylesheet" href="slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="slick-1.8.1/slick/slick-theme.css">
+
+    <!-- Smooth Scroll -->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;1,300&display=swap" rel="stylesheet">
+
+    <!-- AOS animate CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+    <title>Kampus Indonesia | Protoype</title>
+</head>
+
+<body>
+    <!-- Awal Header -->
+    <section id="header">
+        <div class="container">
+            <img src="img/kampusIndonesia.png" class="logo">
+            <div class="header-text">
+                <h1>Bingung Mau Kuliah Di mana ?</h1>
+                <p>KampusIndonesia akan bantu kamu mencari kampus idamanmu. Dapatkan segala informasi dari kampus-kampus terbaik di Indonesia</p>
+                <form>
+                    <input type="text" placeholder="Cari Tahu Kampus Idamanmu">
+                </form>
+                <button class="cummon-btn">Cari Kampus</button>
+            </div>
+        </div>
+    </section>
+    <!-- Akhir Header -->
+
+    <!-- Awal SideNav -->
+    <nav id="sideNav">
+        <ul>
+            <li><a href="#header">BERANDA</a></li>
+            <li><a href="#rekomendasi">REKOMENDASI</a></li>
+            <li><a href="#fitur">FITUR</a></li>
+            <li><a href="#seputar-kuliah">SEPUTAR KULIAH</a></li>
+            <li><a href="#partner">PARTNER</a></li>
+            <li><a href="#" id="login">MASUK | DAFTAR</a></li>
+        </ul>
+    </nav>
+    <img src="img/menu.png" id="menuBtn">
+    <!-- Akhir SideNav -->
+
+    <!-- Awal Rekomendasi -->
+    <section class="home" id="rekomendasi" data-aos="fade-up">
+        <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-control">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" style="background-image: url(img/ipb-gambar.jpg);"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2" style="background-image: url(img/ui-gambar.jpg);"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3" style="background-image: url(img/ugm-gambar.jpg);"></button>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" style="background-image: url(img/ipb-gambar.jpg);">
+                    <div class="container-rekomendasi">
+                        <h2>INSTITUT PERTANIAN BOGOR</h2>
+                        <p>Cari tahu lebih banyak tentang Institu Pertanian Bogor</p>
+                        <button type="button" class="btn-transparan">Cari Tahu</button>
+                    </div>
+                </div>
+                <div class="carousel-item" style="background-image: url(img/ui-gambar.jpg);">
+                    <div class="container-rekomendasi">
+                        <h2>UNIVERSITAS INDONESIA</h2>
+                        <p>Cari tahu lebih banyak tentang Universitas Indonesia</p>
+                        <button type="button" class="btn-transparan">Cari Tahu</button>
+                    </div>
+                </div>
+                <div class="carousel-item" style="background-image: url(img/ugm-gambar.jpg);">
+                    <div class="container-rekomendasi">
+                        <h2>UNIVERSITAS GAJAH MADA</h2>
+                        <p>Cari tahu lebih banyak tentang Universitas Gajah Mada</p>
+                        <button type="button" class="btn-transparan">Cari Tahu</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Akhir Rekomendasi -->
+
+    <!-- Akhir Fitur -->
+    <section id="fitur">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg mt-5 title-fitur">
+                    <h1>Fitur</h1>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 mt-5">
+                    <div class="card">
+                        <img src="img/cari-kampus.png" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Info Kampus Idaman</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn cummon-btn">Cari Tahu</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-5">
+                    <div class="card">
+                        <img src="img/cari-workshop.png">
+                        <div class="card-body">
+                            <h5 class="card-title">Info Webinar</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn cummon-btn">Cari Tahu</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-5">
+                    <div class="card">
+                        <img src="img/cari-beasiswa.png">
+                        <div class="card-body">
+                            <h5 class="card-title">Info Beasiswa</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn cummon-btn">Cari Tahu</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-5">
+                    <div class="card">
+                        <img src="img/cari-lomba.png" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Info Lomba</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn cummon-btn">Cari Tahu</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-5">
+                    <div class="card">
+                        <img src="img/cari-lowongan.png" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Info Lowongan</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn cummon-btn">Cari Tahu</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-5">
+                    <div class="card">
+                        <img src="img/utbk.png" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Info UTBK</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn cummon-btn">Cari Tahu</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <!-- Awal Fitur -->
+
+    <!--Awal Seputar Kuliah -->
+    <section id="seputar-kuliah">
+
+        <!-- Lokasi Kampus Terpopuler -->
+        <div class="container" data-aos="fade-up">
+            <div class="row">
+                <div class="col judul-seputar-kuliah text-center ">
+                    <h1>Seputar Dunia Kuliah</h1>
+                </div>
+            </div>
+
+            <div class="row kampus-terpopuler mt-5">
+                <div class="col-lg-3 ket-kampus-terpopuler">
+                    <div class="card-body text-white">
+                        <h5 class="card-title text-center ">Lokasi Kampus Terpopuler</h5>
+                        <p class="card-text">Dapatkan informasi seputar lokasi dimana kampus idamanmu berada</p>
+                        <button type="button" class="btn-transparan">Cari Tahu</button>
+                    </div>
+                </div>
+
+                <div class="col-lg-9 slide-kampus-terpopuler">
+
+                    <div class="glider">
+
+                        <div class="card">
+                            <img src="img/lokasi-kampus-populer/bali.jpg " class="card-img-top ">
+                            <div class="img-overlay">
+                                <div class="img-title">Bali</div>
+                                <p class="img-description">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                <button type="button" class="btn-transparan">Cari Tahu</button>
+                            </div>
+
+                        </div>
+
+                        <div class="card ">
+                            <img src="img/lokasi-kampus-populer/yogyakarta.jpg " class="card-img-top ">
+                            <div class="img-overlay">
+                                <div class="img-title">Yogyakarta</div>
+                                <p class="img-description">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                <button type="button" class="btn-transparan">Cari Tahu</button>
+                            </div>
+                        </div>
+
+                        <div class="card ">
+                            <img src="img/lokasi-kampus-populer/bandung.jpg " class="card-img-top ">
+                            <div class="img-overlay">
+                                <div class="img-title">Bandung</div>
+                                <p class="img-description">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                <button type="button" class="btn-transparan">Cari Tahu</button>
+                            </div>
+                        </div>
+
+                        <div class="card ">
+                            <img src="img/lokasi-kampus-populer/depok.jpg " class="card-img-top ">
+                            <div class="img-overlay">
+                                <div class="img-title">Depok</div>
+                                <p class="img-description">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                <button type="button" class="btn-transparan">Cari Tahu</button>
+                            </div>
+                        </div>
+
+                        <div class="card ">
+                            <img src="img/lokasi-kampus-populer/surabaya.jpg " class="card-img-top ">
+                            <div class="img-overlay">
+                                <div class="img-title">Surabaya</div>
+                                <p class="img-description">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                <button type="button" class="btn-transparan">Cari Tahu</button>
+                            </div>
+                        </div>
+
+                        <div class="card ">
+                            <img src="img/lokasi-kampus-populer/malang.jpg " class="card-img-top ">
+                            <div class="img-overlay">
+                                <div class="img-title">Malang</div>
+                                <p class="img-description">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                <button type="button" class="btn-transparan">Cari Tahu</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Jurusan Kuliah Terpopuler -->
+        <div class="container">
+
+            <div class="row kampus-terpopuler mt-5">
+
+                <div class="col-lg-9 slide-kampus-terpopuler">
+
+                    <div class="glider">
+
+                        <div class="card">
+                            <img src="img/jurusan-diminati/ekonomi.jpg" class="card-img-top ">
+                            <div class="img-overlay">
+                                <div class="img-title">Ekonomi</div>
+                                <p class="img-description">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                <button type="button" class="btn-transparan">Cari Tahu</button>
+                            </div>
+                        </div>
+
+                        <div class="card ">
+                            <img src="img/jurusan-diminati/hukum.jpg" class="card-img-top ">
+                            <div class="img-overlay">
+                                <div class="img-title">Hukum</div>
+                                <p class="img-description">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                <button type="button" class="btn-transparan">Cari Tahu</button>
+                            </div>
+                        </div>
+
+                        <div class="card ">
+                            <img src="img/jurusan-diminati/ilmu-komputer.jpg" class="card-img-top ">
+                            <div class="img-overlay">
+                                <div class="img-title">Ilmu Komputer</div>
+                                <p class="img-description">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                <button type="button" class="btn-transparan">Cari Tahu</button>
+                            </div>
+                        </div>
+
+                        <div class="card ">
+                            <img src="img/jurusan-diminati/teknik-informatika.jpg" class="card-img-top ">
+                            <div class="img-overlay">
+                                <div class="img-title">Teknik Informatika</div>
+                                <p class="img-description">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                <button type="button" class="btn-transparan">Cari Tahu</button>
+                            </div>
+                        </div>
+
+                        <div class="card ">
+                            <img src="img/jurusan-diminati/teknik-mesin.jpg" class="card-img-top ">
+                            <div class="img-overlay">
+                                <div class="img-title">Teknik Mesin</div>
+                                <p class="img-description">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                <button type="button" class="btn-transparan">Cari Tahu</button>
+                            </div>
+                        </div>
+
+                        <div class="card ">
+                            <img src="img/jurusan-diminati/kedokteran.jpg" class="card-img-top ">
+                            <div class="img-overlay">
+                                <div class="img-title">Kedokteran</div>
+                                <p class="img-description">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                <button type="button" class="btn-transparan">Cari Tahu</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-3 ket-kampus-terpopuler">
+                    <div class=" card-body text-white ">
+                        <h5 class="card-title text-center">Jurusan Paling Diminati</h5>
+                        <p class="card-text ">Dapatkan informasi seputar jurusan paling banyak diminati di kampus.</p>
+                        <button type="button" class="btn-transparan">Cari Tahu</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- Akhir Seputar Kuliah -->
+
+    <!-- Awal Partner -->
+    <section id="partner" data-aos="fade-up" class="mt-5">
+        <div class="container">
+            <h1 class="text-center mb-5">Bekerja Sama Dengan</h1>
+
+            <div class="row justify-content-center">
+                <div class="col-partner"><img src="img/icon-partner/ui-logo.png"></div>
+                <div class="col-partner"><img src="img/icon-partner/ugm-logo.png"></div>
+                <div class="col-partner"><img src="img/icon-partner/telkom-logo.png"></div>
+                <div class="col-partner"><img src="img/icon-partner/itb-logo.png"></div>
+                <div class="col-partner"><img src="img/icon-partner/ipb-logo.png"></div>
+            </div>
+        </div>
+    </section>
+    <!-- Akhir Partner -->
+
+    <!-- Awal Footer -->
+    <section id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <div class="app-logo">
+                        <img src="img/play-store.png">
+                        <img src="img/app-store.png">
+                    </div>
+                </div>
+
+                <div class="footer-col-2">
+                    <img src="img/kampusIndonesia.png">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                </div>
+
+                <div class="footer-col-3">
+                    <h3>Lainnya</h3>
+                    <ul>
+                        <a href="#">
+                            <li>Konsultasi</li>
+                        </a>
+                        <a href="#">
+                            <li>Kebijakan</li>
+                        </a>
+                        <a href="#">
+                            <li>Kerja Sama</li>
+                        </a>
+                        <a href="#">
+                            <li>Anggota</li>
+                        </a>
+                    </ul>
+                </div>
+
+                <div class="footer-col-4">
+                    <h3>Social Media</h3>
+                    <ul>
+                        <a href="#">
+                            <li>Facebook</li>
+                        </a>
+                        <a href="#">
+                            <li>Instagram</li>
+                        </a>
+                        <a href="#">
+                            <li>Twitter</li>
+                        </a>
+                        <a href="#">
+                            <li>Youtube</li>
+                        </a>
+                    </ul>
+                </div>
+
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2021. Dibuat Dengan Sepenuh Hati oleh Afdul Rohmat</p>
+        </div>
+    </section>
+    <!-- Akhir Footer -->
+
+    <!-- Awal Social Media Icon -->
+    <section id="social-icon">
+        <div class="social-icon">
+            <img src="img/facebook.png">
+            <img src="img/instagram.png">
+            <img src="img/twitter.png">
+            <img src="img/youtube.png">
+        </div>
+    </section>
+    <!-- Akhir Social Media icon -->
+
+    <!-- Awal Login card -->
+    <div class="bg-modal" id="login">
+
+        <div class="card-login">
+            <div class="close-btn">+</div>
+            <div class="inner-box" id="card">
+                <div class="card-front">
+                    <h2>MASUK</h2>
+                    <form>
+                        <input type="email" class="input-box" placeholder="Masukkan email" required>
+
+                        <input type="password" class="input-box" placeholder="Masukkan password" required>
+
+                        <button type="submit" class="submit-btn">Masuk</button>
+
+                        <input type="checkbox"><span>Remember Me</span>
+                    </form>
+                    <button type="button" class="btn" onclick="openRegister()">Saya mau mendaftar</button>
+                    <a href="#">Lupa Password ?</a>
+                </div>
+
+                <div class="card-back">
+                    <h2>DAFTAR</h2>
+                    <form>
+                        <input type="text" class="input-box" placeholder="Masukkan nama" required>
+
+                        <input type="email" class="input-box" placeholder="Masukkan email" required>
+
+                        <input type="password" class="input-box" placeholder="Masukkan password" required>
+
+                        <button type="submit" class="submit-btn">Daftar</button>
+
+                        <input type="checkbox"><span>Remember Me</span>
+                    </form>
+                    <button type="button" class="btn" onclick="openLogin()">Saya sudah punya akun</button>
+                    <a href="#">Lupa Password ?</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Akhir Login card -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ========================= SCRIPT ========================== -->
+
+
+
+    <!-- AOS Animate Js -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 200,
+            durattion: 900
+        });
+    </script>
+
+    <!-- Slick JS -->
+    <script src="http://code.jquery.com/jquery-1.9.0.js "></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.js "></script>
+    <script src="slick-1.8.1/slick/slick.min.js "></script>
+
+    <!-- JS ku -->
+    <script src="script.js "></script>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js " integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0 " crossorigin="anonymous "></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js " integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js " integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG " crossorigin="anonymous "></script>
+    -->
+</body>
+
+</html>
